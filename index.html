@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eaf074773a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Prajwal in Pink and White.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Prajwal Haggad</span><br> From India/Karnataka</h1>
+            </div>
+        </div>
+    </div>
+    <!--about me section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate UI/UX designer with a keen eye for detail and a love for creating intuitive user experiences. With a background in both design and development, I bring a unique perspective to every project, ensuring that the final product is not only visually appealing but also highly functional.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', this)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Creating responsive websites</li>
+                            <li><span>Graphic Design</span><br> Designing logos, banners, and more</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX1</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Creating responsive websites</li>
+                            <li><span>Graphic Design</span><br> Designing logos, banners, and more</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX2</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Creating responsive websites</li>
+                            <li><span>Graphic Design</span><br> Designing logos, banners, and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------services------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Creating visually appealing and user-friendly web designs that enhance user experience and engagement.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div> 
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>App Design</h2>
+                <p>Creating visually appealing and user-friendly app designs that enhance user experience and engagement.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div> 
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Graphic Design</h2>
+                <p>Creating visually appealing and user-friendly graphic designs that enhance user experience and engagement.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>A modern social media application with a focus on user engagement and seamless navigation.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Music Player</h3>
+                    <p>A modern music player application with a focus on user experience and seamless navigation.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>ecommerce website</h3>
+                    <p>A modern e-commerce website with a focus on user experience and seamless navigation.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+</div>
+<!------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 1234567890</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/myy.docx" download class="btn btn2">Download CV</a>
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; prajwal. Made with ❤️ by prajwal.</p>
+        </div>
+    </div>
+
+
+<script>
+
+    const tabLinks = document.getElementsByClassName("tab-links");
+    const tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, selectedLink){
+        const selectedContent = document.getElementById(tabname);
+        const shouldOpen = !selectedContent.classList.contains("active-tab");
+
+        for(const tablink of tabLinks){
+            tablink.classList.remove("active-link");
+        }
+        for(const tabcontent of tabContents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        if(shouldOpen){
+            selectedLink.classList.add("active-link");
+            selectedContent.classList.add("active-tab");
+        }
+    }
+
+</script>
+
+<script>
+    function openmenu(){
+        document.getElementById("sidemenu").style.right = "0";
+    }
+    function closemenu(){
+        document.getElementById("sidemenu").style.right = "-100%";
+    }
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyitGily46V802Rwg5ldooIV33QHhrUOr-1KjTvlEX65RFeHbdNz7K9lpCWiZSceJnCfw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>` 
